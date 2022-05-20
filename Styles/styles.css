@@ -8,28 +8,31 @@
 }
 
 * {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
     line-height: 1.5;
     font-weight: 400;
-    font-family: 'PT Serif', serif;
+}
+
+.logo img{
+    max-width: 90%;
 }
 
 .container {
     height: 100vh;
     display: grid;
     background-color: var(--MediumColor1);
-    background-image: linear-gradient( rgba(235, 242, 255, 0.1), rgba(235, 242, 255, 0.8)), url(/Images/outdoor-street-car-van-city-paris-429420-pxhere.com.jpg);
+    background-image: linear-gradient( rgba(235, 242, 255, 0.1), rgba(235, 242, 255, 0.8)), url(/Images/blue-van-royaltyfree.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .content {
-    margin: auto;
+    margin: auto 10px auto 10px;
     display: inline-block;
     padding: 20px;
     background-color: white;
@@ -45,6 +48,10 @@ img {
 @media only screen and (min-width: 960px){
     img {
         width: 80vh;
+    }
+
+    .content {
+        margin: auto;
     }
 
 }
