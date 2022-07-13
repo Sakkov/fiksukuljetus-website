@@ -1,10 +1,14 @@
 :root {
     --LightColor1: rgb(202, 241, 222);
     --LightColor2: rgb(235, 242, 255);
-    --MediumColor1: rgb(109, 141, 255);
-    --LogoColorLight: rgb(40 88 255);
-    --LogoColorMedium: rgb(19 61 224);
-    --LogoColorDark: rgb(0 30 146);
+    --MediumLightColor1: rgb(109, 141, 255);
+    --MediumColor1: rgb(40 88 255);
+    --MediumDarkColor1: rgb(19 61 224);
+    --DarkColor1: rgb(0 30 146);
+}
+
+html {
+    word-break:normal;
 }
 
 * {
@@ -17,41 +21,123 @@
     font-weight: 400;
 }
 
-.logo img{
-    max-width: 90%;
+.logo {
+    font-weight: 900;
+    font-size: 50px;
+    padding-top: 50px;
+    color: white;
+    text-shadow: 4px 4px 4px black;
 }
 
-.container {
-    height: 100vh;
-    display: grid;
+body {
     background-color: var(--MediumColor1);
     background-image: linear-gradient( rgba(235, 242, 255, 0.1), rgba(235, 242, 255, 0.8)), url(/Images/blue-van-royaltyfree.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
 }
 
 .content {
-    margin: auto 10px auto 10px;
-    display: inline-block;
+    margin: 25px auto;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    text-align: center;
-    max-width: 100vh;
+    width: calc(100vw - 20px);
+    max-width: 1200px;
+    outline-width: 5px;
+    outline-color: var(--LightColor2);
+    outline-style: solid;
+    text-align: left;
+}
+
+.content p {
+    margin: 40px auto;
+}
+
+.content h3 {
+    margin: 40px auto;
+}
+
+.content li {
+    margin-left: 25px;
+}
+
+.content ul{
+    margin-bottom: 20px;
 }
 
 img {
     display: inline-block;
     max-width: 600px;
 }
-@media only screen and (min-width: 960px){
-    img {
-        width: 80vh;
-    }
 
-    .content {
-        margin: auto;
-    }
+strong {
+    font-weight: 900;
+}
 
+form input{
+    width: 100%;
+    padding: 10px 20px;
+    border: 5px solid var(--MediumLightColor1);
+    border-radius: 10px;
+}
+
+form label{
+    margin: auto;
+}
+
+form input[type=radio]{
+    width: 1.5rem;
+    margin: auto;
+}
+form input[type=checkbox]{
+    width: 1.5rem;
+    margin: auto;
+}
+
+form button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline-color: var(--MediumLightColor1);
+    outline-style: solid;
+    outline-width: 5px;
+    display: inline-block;
+    margin: 25px;
+    background-color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.form-buttons {
+    text-align: center;
+}
+
+form button:hover {
+    background-color: var(--LightColor2);
+}
+
+form h2 {
+    font-weight: 900;
+    color: var(--DarkColor1);
+}
+
+form textarea{
+    width: 100%;
+    padding: 10px 20px;
+    border: 5px solid var(--MediumLightColor1);
+    border-radius: 5px;
+}
+
+
+.yhteystiedot p {
+    margin: 10px;
+}
+
+.form-question {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 960px){
 }
