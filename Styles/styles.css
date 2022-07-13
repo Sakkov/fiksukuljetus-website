@@ -29,9 +29,14 @@ a {
 .logo {
     font-weight: 900;
     font-size: 50px;
-    padding-top: 50px;
     color: var(--HighLightColor);
     text-shadow: 4px 4px 4px black;
+}
+
+.logo img {
+    height: 40vh;
+    max-height: 800px;
+    max-width: 50%;
 }
 
 body {
@@ -45,7 +50,8 @@ body {
 }
 
 .content {
-    margin: 25px auto;
+    margin: auto;
+    margin-bottom: 25px;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -145,4 +151,17 @@ form textarea{
 }
 
 @media only screen and (max-width: 960px){
+
+    .logo img {
+        max-width: 80%;
+    }
+
+    body {
+        background-image: linear-gradient( rgba(235, 242, 255, 0.1), rgba(235, 242, 255, 0.8));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
 }

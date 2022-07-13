@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/Images/Fiksupalvelulogo_taustalla.svg">
     <title>Fiksupalvelu Oy</title>
 </head>
 <body>
     <div class="container">
         <h1 class="logo">
-            Fiksupalvelu Oy
+            <img src="/Images/Fiksupalvelulogo_taustalla.svg" alt="Fiksupalvelu Oy">
         </h1>
         <article class="content">
             <h3>
@@ -58,7 +59,7 @@
         </article>
         <form action="https://formsubmit.co/info@fiksupalvelu.fi" method="POST" enctype="multipart/form-data" class="content">
             <input type="hidden" name="_subject" value="Yhteydenotto-nettisivujenkautta">
-            <input type="hidden" name="_next" value="https://fiksupalvelu.fi">
+            <input type="hidden" name="_next" value="https://fiksupalvelu.fi/kiitos">
             <input type="hidden" name="_replyto" value="true">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
@@ -66,7 +67,7 @@
                 Ota yhteyttä!
             </h2>
             <div class="yhteystiedot">
-                Voit ottaa meihin yhteyttä alla löytyvällä yhteydenotto-lomakkeella, puhelimitse tai s-postitse. 
+                Voit ottaa meihin yhteyttä alla löytyvällä yhteydenotto-lomakkeella, puhelimitse tai sähköpostitse. 
                 <p>
                     Tarjouspyynnöt: <a href="mailto:info@fiksupalvelu.fi">info@fiksupalvelu.fi</a>
                 </p>
@@ -78,6 +79,9 @@
                 </p>
                 <p>
                     Yhteistyö ja mainostaminen: <a href="mailto:harri.saynajoki@fiksupalvelu.fi">harri.saynajoki@fiksupalvelu.fi</a>
+                </p>
+                <p>
+                    Puhelinnumero: <a href="tel:+358 44 9150721">+358 44 9150721</a>
                 </p>
             </div>
             <br>
@@ -129,6 +133,10 @@
                 <div>
                     <textarea name="Erityisen painavat huonekalut (yli 100kg), kuten pianot yms." id="painavia" cols="30" rows="5" placeholder="Erityisen painavat huonekalut (yli 100kg), kuten pianot yms." required></textarea>
                 </div>
+            </div>
+            <div class="form-question">
+                <label for="muuttopaiva">Muuttopäivä</label>
+                <input type="date" id="muuttopaiva" name="muuttopäivä">
             </div>
             <div class="form-question">
                 <label for="muuta">Muuta huomioitavaa</label>
