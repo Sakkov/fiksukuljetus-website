@@ -5,6 +5,7 @@
     --MediumColor1: rgb(40 88 255);
     --MediumDarkColor1: rgb(19 61 224);
     --DarkColor1: rgb(0 30 146);
+    --HighLightColor: tomato;
 }
 
 html {
@@ -21,11 +22,15 @@ html {
     font-weight: 400;
 }
 
+a {
+    color: var(--HighLightColor);
+}
+
 .logo {
     font-weight: 900;
     font-size: 50px;
     padding-top: 50px;
-    color: white;
+    color: var(--HighLightColor);
     text-shadow: 4px 4px 4px black;
 }
 
@@ -120,7 +125,7 @@ form button:hover {
 
 form h2 {
     font-weight: 900;
-    color: var(--DarkColor1);
+    color: var(--HighLightColor);
 }
 
 form textarea{
