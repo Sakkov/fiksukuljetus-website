@@ -72,7 +72,7 @@ body {
 }
 
 .content li {
-    margin-left: 25px;
+    margin: 0 0 20px 25px
 }
 
 .content ul{
@@ -86,6 +86,17 @@ img {
 
 strong {
     font-weight: 900;
+}
+
+small {
+    color: var(--MediumLightColor1);
+}
+
+.tarjous {
+    border: 5px solid var(--HighLightColor);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
 }
 
 form input{
