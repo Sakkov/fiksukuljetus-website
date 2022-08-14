@@ -63,6 +63,11 @@ body {
     text-align: left;
 }
 
+.content h1 {
+    max-width: 100%;
+    font-size: 2rem;
+}
+
 .content p {
     margin: 40px auto;
 }
@@ -174,5 +179,10 @@ form textarea{
         background-size: cover;
         background-attachment: scroll;
     }
+
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
 
 }
