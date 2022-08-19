@@ -124,7 +124,7 @@ form input[type=checkbox]{
     margin: auto;
 }
 
-form button {
+button {
     padding: 10px 20px;
     border-radius: 10px;
     outline-color: var(--MediumLightColor1);
