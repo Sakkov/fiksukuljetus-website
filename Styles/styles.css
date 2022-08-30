@@ -41,7 +41,7 @@ a {
 
 body {
     background-color: var(--MediumColor1);
-    background-image: linear-gradient( rgba(235, 242, 255, 0.1), rgba(235, 242, 255, 0.8)), url(/Images/blue-van-royaltyfree.jpg);
+    background-image: linear-gradient( rgba(235, 242, 255, 0.1), rgba(235, 242, 255, 0.8)), url(/Images/background.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,6 +166,10 @@ form textarea{
     margin-bottom: 20px;
 }
 
+.image-container {
+    display: none;
+}
+
 @media only screen and (max-width: 960px){
 
     .logo img {
@@ -184,5 +188,13 @@ form textarea{
         font-size: 1.5rem;
     }
 
+    .image-container {
+        display: block;
+        max-width: 100%;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
 
 }
