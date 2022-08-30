@@ -37,6 +37,7 @@ a {
     height: 40vh;
     max-height: 800px;
     max-width: 50%;
+    filter: saturate(500%);
 }
 
 body {
