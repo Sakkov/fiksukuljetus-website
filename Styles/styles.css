@@ -103,6 +103,7 @@ small {
     border-radius: 10px;
     text-align: center;
     padding: 20px;
+    margin: 10px auto;
 }
 
 form input{
@@ -168,7 +169,26 @@ form textarea{
 }
 
 .image-container {
+    display: block;
+    max-width: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+.image-container-no-large {
     display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.grid-img {
+    padding: 30px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 960px){
@@ -189,12 +209,21 @@ form textarea{
         font-size: 1.5rem;
     }
 
-    .image-container {
+    .grid {
         display: block;
-        max-width: 100%;
     }
 
-    .image-container img {
+    .grid-img img {
+        max-height: 50vh;
+    }
+    
+    .image-container-no-large {
+        display: block;
+        max-width: 100%;
+
+    }
+
+    .image-container-no-large img {
         max-width: 100%;
     }
 
