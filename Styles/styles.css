@@ -94,7 +94,7 @@ body {
     background-color: white;
     border-radius: 10px;
     width: calc(100vw - 20px);
-    max-width: 1200px;
+    max-width: 1000px;
     outline-width: 5px;
     outline-color: var(--LightColor2);
     outline-style: solid;
@@ -138,14 +138,14 @@ body {
 
 #navbar {
     transition: all 0.3s ease;
-    max-width: 1200px;
+    max-width: 1000px;
     text-align: center;
     padding: 0px;
 }
 
 .nav__list {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1000px;
 }
 
 #myLinks {
@@ -294,6 +294,7 @@ form textarea{
 
 .image-container img {
     max-width: 100%;
+    object-fit: contain;
 }
 
 .image-container-no-large {
@@ -302,7 +303,7 @@ form textarea{
 
 .grid {
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 6fr 5fr;
 }
 
 .grid-img {
@@ -340,7 +341,6 @@ form textarea{
         outline-color: var(--MediumColor1);
         outline-style: none;
         margin: 10px 0;
-        padding: 5px;
         border-radius: 10px 0 0 10px;
         text-align: right;
         transition: none ;
@@ -349,13 +349,15 @@ form textarea{
     #myLinks {
         display: none;
         text-align: right;
+        padding: 5px;
     }
 
     #nav__icon{
         display: inline-block;
         cursor: pointer;
         background-color: var(--LightColor2);
-        border-radius: 10px;
+        padding-right: 20px;
+        border-radius: 10px 0 0 10px;
     }
 
     .nav__list-item {
@@ -386,6 +388,11 @@ form textarea{
         display: block;
     }
 
+    .grid-img {
+        padding: 0;
+        text-align: center;
+    }
+
     .grid-img img {
         max-height: 50vh;
     }
@@ -393,11 +400,13 @@ form textarea{
     .image-container-no-large {
         display: block;
         max-width: 100%;
-
     }
 
     .image-container-no-large img {
         max-width: 100%;
+        max-height: 50vh;
+        object-fit: contain;
+        height: auto;
     }
 
 }
