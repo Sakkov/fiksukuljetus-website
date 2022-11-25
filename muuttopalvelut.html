@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="Styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,54 +41,33 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/Images/Fiksukuljetuslogo_kuusikulmiotaustalla.svg">
-    <title>Muut palvelut | Fiksukuljetus Oy</title>
+    <title>Muutto palvelut | Fiksukuljetus Oy</title>
+    <meta name="description" content="Teemme kotimuuttoja ja yritysmuuttoja koko Pirkanmaalla. Myös pitkän matkan muutot, joissa toinen päätepiste sijaitsee Pirkanmaalla onnistuvat!">
 </head>
 <body>
     <div class="container">
         <h1 class="logo">
             <img src="/Images/Fiksukuljetuslogo_kuusikulmiotaustalla.svg" alt="Fiksukuljetus Oy muutto pirkanmaa">
         </h1>
-        <nav id="navbar" class="content">
-            <div class="navbarToggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <div class="nav__list">
-                <div id="myLinks">
-                    <div class="nav__list-item"><a href="/">Koti</a></div>
-                    <div class="nav__list-item"><a href="/muuttopalvelut">Muutto palvelut</a></div>
-                    <div class="nav__list-item"><a href="/muutpalvelut">Muut palvelut</a></div>
-                    <div class="nav__list-item"><a href="/yhteystiedot">Yhteystiedot</a></div>
-                    <div class="nav__list-item"><a href="/yhteydenottolomake">Yhteydenottolomake</a></div>
-                </div>
-                <a href="javascript:void(0);" id="nav__icon" onclick="navBar(this)">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
-                </a>
-            </div>
-        </nav>
-        <article class="content">
-            <h1>
-                Kotimuutot
-            </h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati possimus cum vero officiis nulla, dolorem est odio dignissimos laboriosam, doloremque quisquam. Similique at, sed ex exercitationem placeat optio aut eveniet?
-            </p>
-            <div class="highlight">
-                <div>
-                    <a href="/yhteydenottolomake">Yhteydenottolomake</a>
-                </div>
-            </div>
-        </article>
+
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+            $.get("navbar.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+        <!--end of Navigation bar-->
         
         <article class="content">
             <h1>
                 Yritysmuutot
             </h1>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati possimus cum vero officiis nulla, dolorem est odio dignissimos laboriosam, doloremque quisquam. Similique at, sed ex exercitationem placeat optio aut eveniet?
+                Meiltä laadukkaat ja turvalliset muutot myös yrityksille. Toteutamme muuton teidän aikataulujenne mukaisesti. Yleensä yritykset toivovat muutto ajankohtaa ilta-aikaan tai viikonlopulle, kun toimistot ovat kiinni. Kaikista järkevintä muutto onkin siis toteuttaa silloin, kun se aiheuttaa teille mahdollisimman vähän haittaa. Ota rohkeasti yhteyttä, niin suunnitellaan juuri teidän yrityksellenne sopiva paketti.
             </p>
             <div class="highlight">
                 <div>
@@ -97,11 +77,61 @@
         </article>
         
         <article class="content">
+            <h1>
+                Kotimuutot
+            </h1>
+            <p>
+                Teemme kotimuuttoja koko Pirkanmaalla. Myös pitkän matkan muutot, joissa toinen päätepiste sijaitsee Pirkanmaalla onnistuvat! Laskemme muutostasi kiinteän hinnan, jotta tiedät jo etukäteen mitä muuttosi tulee maksamaan. Hinta sisältää aina muuttolaatikot sekä koko muuton.
+            </p>
+            <p>
+                Hinnoittelumme on selkeä ja palvelumme on laadukasta. Pidämme tavaroistanne sekä asunnoista hyvää huolta. Ota rohkeasti yhteyttä, niin kartoitetaan tarpeesi!
+            </p>
+            <div class="highlight">
+                <div>
+                    <a href="/yhteydenottolomake">Yhteydenottolomake</a>
+                </div>
+            </div>
+        </article>
+
+        <!--Navigation bar-->
+        <div id="contact-placeholder">
+
+        </div>
+
+        <script>
+            $.get("contact.html", function(data){
+                $("#contact-placeholder").replaceWith(data);
+            });
+        </script>
+        <!--end of Navigation bar-->
+        
+        
+        <article class="content">
             <h2>
-                Teemme muunmuassa:
+                Tarjoamiamme muuttopalveluita ovat muunmuassa:
             </h2>
             <h1 style="font-size:medium;">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati possimus cum vero officiis nulla, dolorem est odio dignissimos laboriosam, doloremque quisquam. Similique at, sed ex exercitationem placeat optio aut eveniet?
+                yritysmuutto
+                , muuttopalvelu pirkanmaa
+                , yritysmuutot
+                , muuttofirma pirkanmaa
+                , yritys muutto
+                , muutto tampere
+                , muutto pirkanmaa
+                , edullinen muuttopalvelu tampere
+                , muutto tampereelle
+                , muuttopalvelu pirkanmaa
+                , tampere muuttopalvelu
+                , pianon kuljetus tampere
+                , opiskelijamuutot tampere
+                , pianon kuljetus
+                , muuttomies tampere
+                , pianonkuljetus tampere
+                , muuttoapua tampere
+                , pianon muutto tampere
+                , muutto tampereelta helsinkiin
+                , yritysmuutto tampere
+                , kotimuutto tampere
             </h1>
         </article>
     

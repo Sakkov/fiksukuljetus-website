@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="Styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,27 +48,19 @@
         <h1 class="logo">
             <img src="/Images/Fiksukuljetuslogo_kuusikulmiotaustalla.svg" alt="Fiksukuljetus Oy muutto pirkanmaa">
         </h1>
-        <nav id="navbar" class="content">
-            <div class="navbarToggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <div class="nav__list">
-                <div id="myLinks">
-                    <div class="nav__list-item"><a href="/">Koti</a></div>
-                    <div class="nav__list-item"><a href="/muuttopalvelut">Muutto palvelut</a></div>
-                    <div class="nav__list-item"><a href="/muutpalvelut">Muut palvelut</a></div>
-                    <div class="nav__list-item"><a href="/yhteystiedot">Yhteystiedot</a></div>
-                    <div class="nav__list-item"><a href="/yhteydenottolomake">Yhteydenottolomake</a></div>
-                </div>
-                <a href="javascript:void(0);" id="nav__icon" onclick="navBar(this)">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
-                </a>
-            </div>
-        </nav>
+
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+            $.get("navbar.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+        <!--end of Navigation bar-->
+        
         <form action="https://formsubmit.co/info@fiksupalvelu.fi" method="POST" enctype="multipart/form-data" class="content" id="lomake">
             <input type="hidden" name="_subject" value="Yhteydenotto-nettisivujenkautta">
             <input type="hidden" name="_next" value="https://fiksukuljetus.com/kiitos">

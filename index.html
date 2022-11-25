@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="Styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,33 +42,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/Images/Fiksukuljetuslogo_kuusikulmiotaustalla.svg">
     <title>Fiksukuljetus Oy | Muutot Pirkanmaalla</title>
+    <meta name="description" content="Fiksukuljetus Oy on Pirkanmaan alueella toimiva muuttofirma. Meidän kauttamme saat edulliset ja tehokkaat muutot juuri sinun aikataulujesi mukaan.">
 </head>
 <body>
     <div class="container">
         <h1 class="logo">
             <img src="/Images/Fiksukuljetuslogo_kuusikulmiotaustalla.svg" alt="Fiksukuljetus Oy muutto pirkanmaa">
         </h1>
-        <nav id="navbar" class="content">
-            <div class="navbarToggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <div class="nav__list">
-                <div id="myLinks">
-                    <div class="nav__list-item"><a href="#">Koti</a></div>
-                    <div class="nav__list-item"><a href="/muuttopalvelut">Muutto palvelut</a></div>
-                    <div class="nav__list-item"><a href="/muutpalvelut">Muut palvelut</a></div>
-                    <div class="nav__list-item"><a href="/yhteystiedot">Yhteystiedot</a></div>
-                    <div class="nav__list-item"><a href="/yhteydenottolomake">Yhteydenottolomake</a></div>
-                </div>
-                <a href="javascript:void(0);" id="nav__icon" onclick="navBar(this)">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
-                </a>
-            </div>
-        </nav>
+
+
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+            $.get("navbar.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+        <!--end of Navigation bar-->
+        
         <article class="content">
             <div class="grid">
                 <h3>
@@ -94,7 +89,7 @@
                     </ul>
                     Sinun ei tarvitse murehtia muuton järjestelyistä, vaan 
                     <strong>
-                        voit keskittyä vain nauttimaan uudesta kodistasi.
+                         voit keskittyä vain nauttimaan uudesta kodistasi.
                     </strong>
                      Tarvittaessa meiltä onnistuu myös pakkausapu.  
                 </h3>
