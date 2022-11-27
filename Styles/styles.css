@@ -20,9 +20,47 @@ html {
     box-sizing: border-box;
     line-height: 1.5;
     font-weight: 400;
+    color: black;
 }
 
 a {
+    color: var(--HighLightColor);
+}
+
+h2 {
+    font-weight: 900;
+    color: var(--HighLightColor);
+}
+
+.highlight {
+    text-align: center;
+}
+
+.highlight div {
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    margin: auto;
+}
+
+.highlight div:hover {
+    transform: scale(1.5);
+}
+
+.highlight a{
+    padding: 20px 10px;
+    background-color: transparent;
+    color: var(--MediumColor1);
+    font-size: larger;
+    font-weight: 900;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.highlight a:hover{
     color: var(--HighLightColor);
 }
 
@@ -57,7 +95,7 @@ body {
     background-color: white;
     border-radius: 10px;
     width: calc(100vw - 20px);
-    max-width: 1200px;
+    max-width: 1000px;
     outline-width: 5px;
     outline-color: var(--LightColor2);
     outline-style: solid;
@@ -84,6 +122,94 @@ body {
 .content ul{
     margin-bottom: 20px;
 }
+
+
+/*Nav styles */
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    outline-color: var(--MediumColor1);
+    border-radius: 0 0 10px 10px;
+}
+
+.sticky + .content {
+    padding-top: 42px;
+}
+
+#navbar {
+    transition: all 0.3s ease;
+    max-width: 1000px;
+    text-align: center;
+    padding: 0px;
+    position: sticky;
+}
+
+.nav__list {
+    width: 100%;
+    max-width: 1000px;
+}
+
+#myLinks {
+    margin: auto;
+}
+
+.nav__list a{
+    display: block;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--MediumColor1);
+}
+
+.nav__list-item {
+    display: inline-block;
+}
+
+.nav__list-item a {
+    padding: 20px 10px;
+}
+
+.nav__list-item a:hover{
+    color: var(--HighLightColor);
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+}
+
+.nav__list-item a.navtitle{
+    display: none;
+}
+
+#nav__icon{
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: var(--MediumDarkColor1);
+    margin: 9px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/* end of Nav styles */
 
 img {
     display: inline-block;
@@ -137,6 +263,7 @@ button {
     background-color: white;
     font-weight: 900;
     cursor: pointer;
+    color: black;
 }
 
 .form-buttons {
@@ -145,11 +272,6 @@ button {
 
 form button:hover {
     background-color: var(--LightColor2);
-}
-
-form h2 {
-    font-weight: 900;
-    color: var(--HighLightColor);
 }
 
 form textarea{
@@ -175,6 +297,7 @@ form textarea{
 
 .image-container img {
     max-width: 100%;
+    object-fit: contain;
 }
 
 .image-container-no-large {
@@ -183,7 +306,7 @@ form textarea{
 
 .grid {
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 6fr 5fr;
 }
 
 .grid-img {
@@ -198,6 +321,7 @@ form textarea{
     }
 
     body {
+        padding-top: 20px;
         background-image: linear-gradient( rgba(235, 242, 255, 0.1), rgba(235, 242, 255, 0.8));
         background-position: center;
         background-repeat: no-repeat;
@@ -209,8 +333,67 @@ form textarea{
         font-size: 1.5rem;
     }
 
+    /*Nav styles */
+    #navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: fit-content;
+        background: transparent;
+        outline-width: 5px;
+        outline-color: var(--MediumColor1);
+        outline-style: none;
+        margin: 10px 0;
+        border-radius: 10px 0 0 10px;
+        text-align: right;
+        transition: none ;
+    }
+
+    #myLinks {
+        display: none;
+        text-align: right;
+        padding: 5px;
+    }
+
+    #nav__icon{
+        display: inline-block;
+        cursor: pointer;
+        background-color: var(--LightColor2);
+        padding-right: 20px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .nav__list-item {
+        display: block;
+        width: fit-content;
+        width: 100%;
+    }
+
+    .nav__list-item a {
+        padding: 1.0rem;
+        margin: 0.5rem;
+        background-color: var(--LightColor2);
+        border-radius: 10px;
+    }
+
+    .nav__list-item a:hover{
+        color: var(--HighLightColor);
+        transition: all 0.3s ease;
+        transform: scale(1.1);
+    }
+
+    .nav__list-item a.navtitle{
+        display: block;
+    }
+
+
     .grid {
         display: block;
+    }
+
+    .grid-img {
+        padding: 0;
+        text-align: center;
     }
 
     .grid-img img {
@@ -220,11 +403,13 @@ form textarea{
     .image-container-no-large {
         display: block;
         max-width: 100%;
-
     }
 
     .image-container-no-large img {
         max-width: 100%;
+        max-height: 50vh;
+        object-fit: contain;
+        height: auto;
     }
 
 }
