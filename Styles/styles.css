@@ -134,6 +134,16 @@ body {
     margin-bottom: 20px;
 }
 
+article.content {
+    margin-bottom: 69px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
 
 /*Nav styles */
 .sticky {
@@ -342,6 +352,10 @@ form textarea{
 
     .content h1 {
         font-size: 1.5rem;
+    }
+
+    article.content{
+        margin-bottom: 25px;
     }
 
     /*Nav styles */
