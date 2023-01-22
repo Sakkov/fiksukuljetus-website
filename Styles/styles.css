@@ -78,6 +78,17 @@ h2 {
     filter: saturate(500%);
 }
 
+#description {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--DarkColor1);
+}
+
+#description strong{
+    color: var(--HighLightColor);
+}
+
 body {
     background-color: var(--MediumColor1);
     background-image: linear-gradient( rgba(235, 242, 255, 0.1), rgba(235, 242, 255, 0.8)), url(/Images/background.jpeg);
@@ -123,6 +134,16 @@ body {
     margin-bottom: 20px;
 }
 
+article.content {
+    margin-bottom: 69px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
 
 /*Nav styles */
 .sticky {
@@ -331,6 +352,10 @@ form textarea{
 
     .content h1 {
         font-size: 1.5rem;
+    }
+
+    article.content{
+        margin-bottom: 25px;
     }
 
     /*Nav styles */
