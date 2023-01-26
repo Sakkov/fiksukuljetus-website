@@ -2,10 +2,10 @@
     --LightColor1: rgb(202, 241, 222);
     --LightColor2: rgb(235, 242, 255);
     --MediumLightColor1: rgb(109, 141, 255);
-    --MediumColor1: rgb(40 88 255);
-    --MediumDarkColor1: rgb(19 61 224);
-    --DarkColor1: rgb(0 30 146);
-    --HighLightColor: tomato;
+    --MediumColor1: rgb(40, 88, 255);
+    --MediumDarkColor1: rgb(19, 61, 224);
+    --DarkColor1: rgb(0, 30, 146);
+    --HighLightColor: red;
 }
 
 html {
