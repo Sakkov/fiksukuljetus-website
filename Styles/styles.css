@@ -335,6 +335,16 @@ form textarea{
     text-align: center;
 }
 
+footer img{
+    max-width: 90%;
+    margin: 10px;
+    width: 400px;
+}
+
+.yhteistyossa {
+    margin: 100px 20px;
+}
+
 @media only screen and (max-width: 960px){
 
     .logo img {
