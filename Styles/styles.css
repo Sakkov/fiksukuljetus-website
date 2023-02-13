@@ -336,9 +336,14 @@ form textarea{
 }
 
 footer a{
-    max-width: 90%;
+    max-width: 80%;
     margin: 10px;
     width: 400px;
+}
+
+footer img{
+    max-width: 100%;
+    width: 300px;
 }
 
 .yhteistyossa {
