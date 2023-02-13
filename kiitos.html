@@ -77,9 +77,17 @@
             </h2>
         </article>
     </div>
-    <footer>
-        © 2022 Fiksukuljetus Oy. All Rights Reserved | <a href="/policy">Tietosuojaseloste</a> | Nettisivut tehnyt <a href="https://sakukovanen.fi">Saku Kovanen</a>
-    </footer>
+        <!--Footer-->
+        <div id="footer-placeholder">
+
+        </div>
+
+        <script>
+            $.get("footer.html", function(data){
+                $("#footer-placeholder").replaceWith(data);
+            });
+        </script>
+        <!--end of Footer-->
     
     <script>
         fbq('track', 'Contact');
