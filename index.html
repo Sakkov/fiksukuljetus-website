@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/ec0e934eceef9e4a791f3d49eedc270c.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -158,24 +159,19 @@
                 <h2>
                     Ota yhteyttä!
                 </h2>
-                <div class="yhteystiedot">
-                    Voit ottaa meihin yhteyttä alla löytyvällä yhteydenotto-lomakkeella, puhelimitse tai sähköpostitse. 
-                    <p>
-                        Tarjouspyynnöt: <a href="mailto:info@fiksupalvelu.fi">info@fiksupalvelu.fi</a>
-                    </p>
-                    <p>
-                        Käytännön asiat: <a href="mailto:jonne.juhala@fiksupalvelu.fi">jonne.juhala@fiksupalvelu.fi</a>
-                    </p>
-                    <p>
-                        Laskutukseen ja tarjouksiin liittyvät kysymykset: <a href="mailto:iida.kallio@fiksupalvelu.fi">iida.kallio@fiksupalvelu.fi</a>
-                    </p>
-                    <p>
-                        Yhteistyö ja mainostaminen: <a href="mailto:harri.saynajoki@fiksupalvelu.fi">harri.saynajoki@fiksupalvelu.fi</a>
-                    </p>
-                    <p>
-                        Puhelinnumero: <a href="tel:+358 41 3191233">+358 41 3191233</a>
-                    </p>
+
+                <!--Pelkät yhteystiedot-->
+                <div id="pelkatyhteystiedot-placeholder">
+
                 </div>
+
+                <script>
+                    $.get("pelkkayhteystiedot.html", function(data){
+                        $("#pelkatyhteystiedot-placeholder").replaceWith(data);
+                    });
+                </script>
+                <!--end of pelkät yhteystiedot-->
+
                 <br>
                 <h2>
                     <strong>Yhteydenottolomake</strong>
@@ -293,7 +289,7 @@
         <!--end of Footer-->
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/ec0e934eceef9e4a791f3d49eedc270c.js"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>
