@@ -433,7 +433,6 @@ footer img{
         text-align: right;
         padding: 5px;
         overflow-y: auto;
-        max-height: 80vh;
     }
 
     #nav__icon{
@@ -471,8 +470,8 @@ footer img{
         left: 0;
         right: 0;
         margin: auto;
-        overflow-y: auto;
-        max-height: 80vh;
+        overflow: hidden;
+        position: static;
     }
 
     .dropdown-content a {
