@@ -33,3 +33,20 @@ function myFunction() {
     }
   }
 }
+
+// Handle clicks outside of the dropdown
+document.addEventListener("click", function (event) {
+  var dropdown = document.querySelector(".dropdown-content");
+  var isClickInside = dropdown.contains(event.target) || event.target.matches(".dropbtn");
+
+  if (!isClickInside && dropdown.style.display === "block") {
+      dropdown.style.display = "none";
+  }
+});
+
+document.querySelectorAll(".dropbtn").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+      var dropdown = btn.nextElementSibling;
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  });
+});
