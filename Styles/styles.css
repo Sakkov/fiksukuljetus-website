@@ -201,6 +201,10 @@ a.anchor {
     display: none;
 }
 
+.nav__list-item a.active{
+    font-weight: 900;
+}
+
 #nav__icon{
     display: none;
     cursor: pointer;
@@ -268,6 +272,22 @@ a.anchor {
 .dropbtn {
     padding: 0;
 }
+
+.dropdown-arrow {
+    display: inline-block;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--MediumLightColor1);
+}
+
+.dropdown:hover .dropdown-arrow {
+    border-top: 5px solid var(--HighLightColor);
+}
+
 
 /* end of Nav styles */
 
