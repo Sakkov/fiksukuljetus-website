@@ -36,32 +36,23 @@ h2 {
     text-align: center;
 }
 
-.highlight div {
-    display: inline-block;
-    max-width: 100%;
-    text-align: center;
-    padding: 20px;
-    transition: all 0.3s ease;
-    margin: auto;
-}
-
-.highlight div:hover {
-    transform: scale(1.5);
-}
-
 .highlight a{
-    padding: 20px 10px;
-    background-color: transparent;
-    color: var(--MediumColor1);
-    font-size: larger;
-    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--HighLightColor);
     border-radius: 10px;
     transition: all 0.3s ease;
-    text-decoration: none;
+    margin: auto;
+    /* Shadows */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 .highlight a:hover{
-    color: var(--HighLightColor);
+    transform: scale(1.1);
 }
 
 .logo {

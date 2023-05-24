@@ -53,9 +53,7 @@ document.querySelectorAll(".dropbtn").forEach(function (btn) {
 
 var navLinks = document.getElementsByClassName('nav-link');
 for (var i = 0; i < navLinks.length; i++) {
-  console.log(navLinks[i].href, document.URL)
   if (navLinks[i].href == document.URL) {
     navLinks[i].className += ' active';
-    console.log(navLinks[i].className)
   }
 }
