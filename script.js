@@ -12,6 +12,17 @@ function navBar(y) {
   }
 }
 
+let index = 0;
+const images = document.querySelectorAll('.carousel__image');
+
+function changeImage(n) {
+    images[index].style.display = 'none';
+    index = (index + n + images.length) % images.length;
+    images[index].style.display = 'block';
+}
+
+var carousel_interval = setInterval(() => changeImage(1), 10000); // Change image every 3 seconds
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () { myFunction() };
 

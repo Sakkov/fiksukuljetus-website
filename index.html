@@ -41,7 +41,7 @@
             !function (f, b, e, v, n, t, s) {
                 if (f.fbq) return; n = f.fbq = function () {
                     n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
                 };
                 if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
                 n.queue = []; t = b.createElement(e); t.async = !0;
@@ -100,11 +100,11 @@
 
                 <!--call to action-->
                 <div id="c2a-placeholder">
-        
+
                 </div>
-        
+
                 <script>
-                    $.get("c2a.html", function(data){
+                    $.get("c2a.html", function (data) {
                         $("#c2a-placeholder").replaceWith(data);
                     });
                 </script>
@@ -148,9 +148,17 @@
                         Tarvittaessa meiltä onnistuu myös pakkausapu.
                     </h3>
                     <div class="grid-img">
-                        <div class="image-container">
-                            <img src="/Images/tayspaku_80_w400.webp" height="534" width="400"
+                        <div class="image-container carousel">
+                            <img class="carousel__image" src="/Images/pesukone_kyytiin.webp" height="534" width="400"
+                                alt="muutto tampere">
+                            <img class="carousel__image" src="/Images/paku_tayn_laatikoit.webp" height="534"
+                                width="400" alt="tehokas muutto tampere">
+                            <img class="carousel__image" src="/Images/voimamies_sohva.webp" height="534" width="400"
+                                alt="voimakkaimmat tekijät">
+                            <img class="carousel__image" src="/Images/tayspaku_80_w400.webp" height="534" width="400"
                                 alt="muutto ylöjärvi tampere">
+                            <div class="carousel__prev" onclick="changeImage(-1)">&#10094;</div>
+                            <div class="carousel__next" onclick="changeImage(1)">&#10095;</div>
                         </div>
                     </div>
                 </div>

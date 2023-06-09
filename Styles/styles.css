@@ -8,6 +8,7 @@
     --HighLightColor: red;
 }
 
+/* GENERAL STYLES */
 html {
     word-break:normal;
 }
@@ -156,8 +157,53 @@ a.anchor {
     width: 100%;
 }
 
+.carousel {
+    position: relative;
+    max-width: 600px; /* You can change this */
+    margin: auto;
+    width: fit-content;
+}
+
+.carousel__image {
+    width: 100%;
+    display: none;
+    transition: opacity 1s;
+}
+
+.carousel__image:first-child {
+    display: block;
+}
+
+.carousel__prev, .carousel__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.carousel__next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.carousel__prev:hover, .carousel__next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* END GENERAL STYLES */
 
 /*Nav styles */
+nav {
+    z-index: 999;
+}
+
 .sticky {
     position: sticky;
     top: 0;
@@ -322,6 +368,7 @@ small {
     margin: 10px auto;
 }
 
+/* FORM STYLES */
 form input{
     width: 100%;
     padding: 10px 20px;
@@ -371,7 +418,6 @@ form textarea{
     border-radius: 10px;
 }
 
-
 .yhteystiedot p {
     margin: 10px;
 }
@@ -379,6 +425,7 @@ form textarea{
 .form-question {
     margin-bottom: 20px;
 }
+/* END OF FORM STYLES */
 
 .image-container {
     display: block;
@@ -404,6 +451,8 @@ form textarea{
     text-align: center;
 }
 
+
+/* FOOTER STYLES */
 footer a{
     max-width: 80%;
     margin: 10px;
@@ -418,7 +467,9 @@ footer img{
 .yhteistyossa {
     margin: 100px 20px;
 }
+/* END OF FOOTER STYLES */
 
+/* MEDIA QUERIES */
 @media only screen and (max-width: 960px){
 
     .logo img {
