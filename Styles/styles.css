@@ -1,11 +1,11 @@
 :root {
-    --LightColor1: rgb(202, 241, 222);
-    --LightColor2: rgb(235, 242, 255);
-    --MediumLightColor1: rgb(109, 141, 255);
-    --MediumColor1: rgb(40, 88, 255);
-    --MediumDarkColor1: rgb(19, 61, 224);
-    --DarkColor1: rgb(0, 30, 146);
-    --HighLightColor: red;
+    --LightColor1: #caf1de;
+    --LightColor2: #ebf2ff;
+    --MediumLightColor1: #6d8dff;
+    --MediumColor1: #2858ff;
+    --MediumDarkColor1: #133de0;
+    --DarkColor1: #001e92;
+    --HighLightColor: #ff0000;
 }
 
 /* GENERAL STYLES */
@@ -137,7 +137,7 @@ a.anchor {
     visibility: hidden;
 }
 
-#arvostelut {
+#review-scores {
     text-align: center;
     margin: 40px auto;
     filter: drop-shadow(0px 0px 1px var(--MediumColor1));
@@ -147,14 +147,42 @@ a.anchor {
     justify-content: space-evenly;
 }
 
-#arvostelut a {
+#review-scores a {
     padding: 10px;
     width: 200px;
     display: inline-block;
 }
 
-#arvostelut img {
+#review-scores img {
     width: 100%;
+}
+
+.reviews {
+    padding: 20px;
+}
+
+.review {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--LightColor2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 0;
+}
+
+.review p:last-child {
+    text-align: right;
+    font-size: 0.9em;
+    color: var(--MediumLightColor1);
+}
+
+.review img {
+    height: 16px;
+    filter: drop-shadow(0px 0px 1px var(--MediumColor1));
 }
 
 .carousel {
@@ -491,6 +519,21 @@ footer img{
 
     article.content{
         margin-bottom: 25px;
+        padding: 10px;
+    }
+
+    #review-scores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #review-scores a {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .reviews {
+        padding: 20px 0;
     }
 
     /*Nav styles */
