@@ -286,18 +286,28 @@
                     <div class="form-question">
                         <label for="osoiteesta">Osoite, josta muutetaan</label>
                         <input type="text" id="osoiteesta" name="Osoite, josta muutetaan"
-                            placeholder="Osoite, josta muutetaan" required>
+                            placeholder="lähtö osoite" required>
                     </div>
                     <div class="form-question">
                         <label for="osoiteeseen">Osoite, johon muutetaan</label>
                         <input type="text" id="osoiteeseen" name="Osoite, johon muutetaan"
-                            placeholder="Osoite, johon muutetaan" required>
+                            placeholder="saapumis osoite" required>
                     </div>
                     <div class="form-question">
-                        <label for="kerroksia/hissi">Kerrokset muuttokohteissa, hissit?</label>
+                        <label for="lähtö-kerros">Monennessako kerroksessa asunto on, josta muutetaan?</label>
+                        <input type="number" id="lähtö-kerros" name="lähtö-kerros"
+                            placeholder="lähtö kerros" required>
+                    </div>
+                    <div class="form-question">
+                        <label for="saapumis-kerros">Monennessako kerroksessa asunto on, johon muutetaan?</label>
+                        <input type="number" id="saapumis-kerros" name="saapumis-kerros"
+                            placeholder="saapumis kerros" required>
+                    </div>
+                    <div class="form-question">
+                        <label for="hissi">Pääseekö hissiä käyttämään muutossa?</label>
                         <div>
-                            <textarea name="Kerrokset muuttokohteissa, hissit?" id="kerroksia/hissi" cols="30" rows="5"
-                                placeholder="Kerrokset muuttokohteissa, hissit?" required></textarea>
+                            <textarea name="Pääseekö hissiä käyttämään muutossa?" id="hissi" cols="30" rows="5"
+                                placeholder="Pääseekö hissiä käyttämään muutossa?" required></textarea>
                         </div>
                     </div>
                     <div class="form-question">

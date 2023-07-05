@@ -1,204 +1,235 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/ec0e934eceef9e4a791f3d49eedc270c.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WXMQTFF');</script>
-    <!-- End Google Tag Manager -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" charset="UTF-8"
+            src="//cdn.cookie-script.com/s/ec0e934eceef9e4a791f3d49eedc270c.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q935PS0FZV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-WXMQTFF');</script>
+        <!-- End Google Tag Manager -->
 
-        gtag('config', 'G-Q935PS0FZV');
-    </script>
-
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '809661906874470');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=809661906874470&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-
-    <!-- Clarity Code -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "fthcpyj8dp");
-    </script>
-    <!-- End Clarity Code -->
-
-
-    <link rel="icon" type="image/x-icon" href="/Images/Fiksukuljetuslogo_kuusikulmiotaustalla.svg">
-    <title>Yhteydenottolomake | Fiksukuljetus Oy</title>
-</head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXMQTFF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <div class="container">
-        <div class="logo">
-            <img src="/Images/Fiksukuljetuslogo_kuusikulmiotaustalla.svg" alt="Fiksukuljetus Oy muutto pirkanmaa" width=500 height=500>
-        </div>
-
-        <!--Navigation bar-->
-        <div id="nav-placeholder">
-
-        </div>
-
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q935PS0FZV"></script>
         <script>
-            $.get("navbar.html", function(data){
-                $("#nav-placeholder").replaceWith(data);
-            });
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-Q935PS0FZV');
         </script>
-        <!--end of Navigation bar-->
-        
-        <form action="https://formsubmit.co/info@fiksupalvelu.fi" method="POST" enctype="multipart/form-data" class="content" id="lomake">
-            <input type="hidden" name="_subject" value="Yhteydenotto-nettisivujenkautta">
-            <input type="hidden" name="_next" value="https://fiksukuljetus.com/kiitos">
-            <input type="hidden" name="_replyto" value="true">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="true">
-            <h2>
-                Ota yhteyttä!
-            </h2>
-            
+
+        <!-- Meta Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '809661906874470');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+                src="https://www.facebook.com/tr?id=809661906874470&ev=PageView&noscript=1" /></noscript>
+        <!-- End Meta Pixel Code -->
+
+        <!-- Clarity Code -->
+        <script type="text/javascript">
+            (function (c, l, a, r, i, t, y) {
+                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+            })(window, document, "clarity", "script", "fthcpyj8dp");
+        </script>
+        <!-- End Clarity Code -->
+
+
+        <link rel="icon" type="image/x-icon" href="/Images/Fiksukuljetuslogo_kuusikulmiotaustalla.svg">
+        <title>Yhteydenottolomake | Fiksukuljetus Oy</title>
+    </head>
+
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXMQTFF" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="container">
+            <div class="logo">
+                <img src="/Images/Fiksukuljetuslogo_kuusikulmiotaustalla.svg" alt="Fiksukuljetus Oy muutto pirkanmaa"
+                    width=500 height=500>
+            </div>
+
+            <!--Navigation bar-->
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                $.get("navbar.html", function (data) {
+                    $("#nav-placeholder").replaceWith(data);
+                });
+            </script>
+            <!--end of Navigation bar-->
+
+            <form action="https://formsubmit.co/info@fiksupalvelu.fi" method="POST" enctype="multipart/form-data"
+                class="content" id="lomake">
+                <input type="hidden" name="_subject" value="Yhteydenotto-nettisivujenkautta">
+                <input type="hidden" name="_next" value="https://fiksukuljetus.com/kiitos">
+                <input type="hidden" name="_replyto" value="true">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="true">
+                <h2>
+                    Ota yhteyttä!
+                </h2>
+
                 <!--Pelkät yhteystiedot-->
                 <div id="pelkatyhteystiedot-placeholder">
 
                 </div>
 
                 <script>
-                    $.get("pelkkayhteystiedot.html", function(data){
+                    $.get("pelkkayhteystiedot.html", function (data) {
                         $("#pelkatyhteystiedot-placeholder").replaceWith(data);
                     });
                 </script>
                 <!--end of pelkät yhteystiedot-->
 
-            <br>
-            <h2>
-                <strong>Yhteydenottolomake</strong>
-            </h2>
+                <br>
+                <h2>
+                    <strong>Yhteydenottolomake</strong>
+                </h2>
 
-            
-            <div class="form-question">
-                <label for="nimi">Nimi</label>
-                <input type="text" id="nimi" name="Nimi" placeholder="Nimi" required>
-            </div>
-            <div class="form-question">
-                <label for="puhelin">Puhelinnumero</label>
-                <input type="tel" id="puhelin" name="puhelin" placeholder="Puhelinnumero" required>
-            </div>
-            <div class="form-question">
-                <label for="email">Sähköpostiosoite</label>
-                <input type="email" id="email" name="email" placeholder="Sähköpostiosoite" required>
-            </div>
-            <div class="form-question">
-                <label for="laskutusosoite">Laskutusosoite</label>
-                <input type="text" id="laskutusosoite" name="Laskutusosoite" placeholder="Laskutusosoite" required>
-            </div>
-            <div class="form-question">
-                <label for="osoiteesta">Osoite, josta muutetaan</label>
-                <input type="text" id="osoiteesta" name="Osoite, josta muutetaan" placeholder="Osoite, josta muutetaan" required>
-            </div>
-            <div class="form-question">
-                <label for="osoiteeseen">Osoite, johon muutetaan</label>
-                <input type="text" id="osoiteeseen" name="Osoite, johon muutetaan" placeholder="Osoite, johon muutetaan" required>
-            </div>
-            <div class="form-question">
-                <label for="kerroksia/hissi">Kerrokset muuttokohteissa, hissit?</label>
-                <div>
-                    <textarea name="Kerrokset muuttokohteissa, hissit?" id="kerroksia/hissi" cols="30" rows="5" placeholder="Kerrokset muuttokohteissa, hissit?" required></textarea>
-                </div>
-            </div>
-            <div class="form-question">
-                <label for="neliöt">Muutettavan asunnon neliöt (m²)</label>
-                <input type="number" id="neliöt" name="Muutettavan asunnon neliöt" placeholder="Muutettavan asunnon neliöt" min="-1" required>
-            </div>
-            <div class="form-question">
-                <label for="etäisyys">Muuttokohteiden välinen etäisyys (km)</label>
-                <input type="number" id="etäisyys" name="Muuttokohteiden välinen etäisyys" placeholder="Muuttokohteiden välinen etäisyys" min="-1" required>
-            </div>
-            <div class="form-question">
-                <label for="painavia">Erityisen painavat huonekalut (yli 100kg), kuten pianot yms.</label>
-                <div>
-                    <textarea name="Erityisen painavat huonekalut (yli 100kg), kuten pianot yms." id="painavia" cols="30" rows="5" placeholder="Erityisen painavat huonekalut (yli 100kg), kuten pianot yms." required></textarea>
-                </div>
-            </div>
-            <div class="form-question">
-                <label for="muuttopaiva">Muuttopäivä</label>
-                <input type="date" id="muuttopaiva" name="muuttopäivä">
-            </div>
-            <div class="form-question">
-                <label for="mista_loysit_meidat">Mistä löysit meidät?</label>
-                <div>
-                    <textarea name="Mistä löysit meidät?" id="mista_loysit_meidat" cols="30" rows="5" placeholder="Mistä löysit meidät?"></textarea>
-                </div>
-            </div>
-            <div class="form-question">
-                <label for="muuta">Muuta huomioitavaa</label>
-                <div>
-                    <textarea name="Muuta huomioitavaa" id="muuta" cols="30" rows="5" placeholder="Muuta huomioitavaa"></textarea>
-                </div>
-            </div>
 
-            
-            
-            
-            <div class="form-buttons">
-                <button type="reset">Tyhjennä</button>
-                <button type="submit">Lähetä</button>
-            </div>
-        </form> 
-    
-    </div>
+                <div class="form-question">
+                    <label for="nimi">Nimi</label>
+                    <input type="text" id="nimi" name="Nimi" placeholder="Nimi" required>
+                </div>
+                <div class="form-question">
+                    <label for="puhelin">Puhelinnumero</label>
+                    <input type="tel" id="puhelin" name="puhelin" placeholder="Puhelinnumero" required>
+                </div>
+                <div class="form-question">
+                    <label for="email">Sähköpostiosoite</label>
+                    <input type="email" id="email" name="email" placeholder="Sähköpostiosoite" required>
+                </div>
+                <div class="form-question">
+                    <label for="laskutusosoite">Laskutusosoite</label>
+                    <input type="text" id="laskutusosoite" name="Laskutusosoite" placeholder="Laskutusosoite" required>
+                </div>
+                <div class="form-question">
+                    <label for="osoiteesta">Osoite, josta muutetaan</label>
+                    <input type="text" id="osoiteesta" name="Osoite, josta muutetaan" placeholder="lähtö osoite"
+                        required>
+                </div>
+                <div class="form-question">
+                    <label for="osoiteeseen">Osoite, johon muutetaan</label>
+                    <input type="text" id="osoiteeseen" name="Osoite, johon muutetaan" placeholder="saapumis osoite"
+                        required>
+                </div>
+                <div class="form-question">
+                    <label for="lähtö-kerros">Monennessako kerroksessa asunto on, josta muutetaan?</label>
+                    <input type="number" id="lähtö-kerros" name="lähtö-kerros" placeholder="lähtö kerros" required>
+                </div>
+                <div class="form-question">
+                    <label for="saapumis-kerros">Monennessako kerroksessa asunto on, johon muutetaan?</label>
+                    <input type="number" id="saapumis-kerros" name="saapumis-kerros" placeholder="saapumis kerros"
+                        required>
+                </div>
+                <div class="form-question">
+                    <label for="hissi">Pääseekö hissiä käyttämään muutossa?</label>
+                    <div>
+                        <textarea name="Pääseekö hissiä käyttämään muutossa?" id="hissi" cols="30" rows="5"
+                            placeholder="Pääseekö hissiä käyttämään muutossa?" required></textarea>
+                    </div>
+                </div>
+                <div class="form-question">
+                    <label for="neliöt">Muutettavan asunnon neliöt (m²)</label>
+                    <input type="number" id="neliöt" name="Muutettavan asunnon neliöt"
+                        placeholder="Muutettavan asunnon neliöt" min="-1" required>
+                </div>
+                <div class="form-question">
+                    <label for="etäisyys">Muuttokohteiden välinen etäisyys (km)</label>
+                    <input type="number" id="etäisyys" name="Muuttokohteiden välinen etäisyys"
+                        placeholder="Muuttokohteiden välinen etäisyys" min="-1" required>
+                </div>
+                <div class="form-question">
+                    <label for="painavia">Erityisen painavat huonekalut (yli 100kg), kuten pianot yms.</label>
+                    <div>
+                        <textarea name="Erityisen painavat huonekalut (yli 100kg), kuten pianot yms." id="painavia"
+                            cols="30" rows="5"
+                            placeholder="Erityisen painavat huonekalut (yli 100kg), kuten pianot yms."
+                            required></textarea>
+                    </div>
+                </div>
+                <div class="form-question">
+                    <label for="muuttopaiva">Muuttopäivä</label>
+                    <input type="date" id="muuttopaiva" name="muuttopäivä">
+                </div>
+                <div class="form-question">
+                    <label for="mista_loysit_meidat">Mistä löysit meidät?</label>
+                    <div>
+                        <textarea name="Mistä löysit meidät?" id="mista_loysit_meidat" cols="30" rows="5"
+                            placeholder="Mistä löysit meidät?"></textarea>
+                    </div>
+                </div>
+                <div class="form-question">
+                    <label for="muuta">Muuta huomioitavaa</label>
+                    <div>
+                        <textarea name="Muuta huomioitavaa" id="muuta" cols="30" rows="5"
+                            placeholder="Muuta huomioitavaa"></textarea>
+                    </div>
+                </div>
 
-    
+
+
+
+                <div class="form-buttons">
+                    <button type="reset">Tyhjennä</button>
+                    <button type="submit">Lähetä</button>
+                </div>
+            </form>
+
+        </div>
+
+
         <!--Footer-->
         <div id="footer-placeholder">
 
         </div>
 
         <script>
-            $.get("footer.html", function(data){
+            $.get("footer.html", function (data) {
                 $("#footer-placeholder").replaceWith(data);
             });
         </script>
         <!--end of Footer-->
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    
-    <script src="script.js"></script>
-</body>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+        <script src="script.js"></script>
+    </body>
+
 </html>
