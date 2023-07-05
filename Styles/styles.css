@@ -417,6 +417,37 @@ form input[type=checkbox]{
     margin: auto;
 }
 
+/* Custom Radio Button Styles */
+.form-question input[type="radio"] {
+    display: none;
+}
+
+.form-question input[type="radio"] + label {
+    position: relative;
+    padding: 4px 0 4px 35px;
+    cursor: pointer;
+    display: inline-block;
+    color: var(--MediumColor1);
+    margin-right: 20px;
+}
+
+.form-question input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 5px solid var(--MediumLightColor1);
+    border-radius: 50%;
+    background-color: white;
+}
+
+.form-question input[type="radio"]:checked + label:before {
+    background-color: var(--MediumLightColor1);
+}
+
+
 button {
     padding: 10px 20px;
     border-radius: 10px;
