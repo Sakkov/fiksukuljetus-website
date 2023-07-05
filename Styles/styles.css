@@ -481,19 +481,20 @@ form textarea{
 
 
 /* FOOTER STYLES */
-footer a{
+footer img{
+    max-width: 100%;
+    width: 300px;
     max-width: 80%;
     margin: 10px;
     width: 400px;
 }
 
-footer img{
-    max-width: 100%;
-    width: 300px;
-}
-
 .yhteistyossa {
     margin: 100px 20px;
+}
+
+.footer-cc {
+    padding: 20px 0;
 }
 /* END OF FOOTER STYLES */
 
