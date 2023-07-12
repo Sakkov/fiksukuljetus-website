@@ -85,8 +85,19 @@
             </div>
 
             <script>
+                function setActiveLink() {
+                    var navLinks = document.getElementsByClassName('nav-link');
+                    console.log(navLinks)
+                    for (var i = 0; i < navLinks.length; i++) {
+                        if (navLinks[i].href == document.URL) {
+                            navLinks[i].className += ' active';
+                            console.log(navLinks[i])
+                        }
+                    }
+                };
                 $.get("navbar.html", function (data) {
                     $("#nav-placeholder").replaceWith(data);
+                    setActiveLink();
                 });
             </script>
             <!--end of Navigation bar-->

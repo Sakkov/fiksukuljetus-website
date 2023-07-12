@@ -39,10 +39,3 @@ document.querySelectorAll(".dropbtn").forEach(function (btn) {
     dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
   });
 });
-
-var navLinks = document.getElementsByClassName('nav-link');
-for (var i = 0; i < navLinks.length; i++) {
-  if (navLinks[i].href == document.URL) {
-    navLinks[i].className += ' active';
-  }
-}

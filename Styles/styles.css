@@ -333,7 +333,7 @@ nav {
     text-decoration: none;
     display: block;
     border-radius: 10px;
-    border: 5px solid white;
+    border: 5px solid transparent;
 }
 
 .dropdown-content a:hover {
