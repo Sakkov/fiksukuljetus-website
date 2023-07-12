@@ -21,29 +21,7 @@ function changeImage(n) {
     images[index].style.display = 'block';
 }
 
-var carousel_interval = setInterval(() => changeImage(1), 10000); // Change image every 3 seconds
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = function () { myFunction() };
-
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    if (window.innerWidth > 960) {
-      navbar.classList.add("sticky");
-    }
-  } else {
-    if (window.innerWidth > 960) {
-      navbar.classList.remove("sticky");
-    }
-  }
-}
+var carousel_interval = setInterval(() => changeImage(1), 10000); // Change image every 10 seconds
 
 // Handle clicks outside of the dropdown
 document.addEventListener("click", function (event) {
