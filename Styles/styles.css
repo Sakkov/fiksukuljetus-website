@@ -232,24 +232,14 @@ nav {
     z-index: 999;
 }
 
-.sticky {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    outline-color: var(--MediumColor1);
-    border-radius: 0 0 10px 10px;
-}
-
-.sticky + .content {
-    padding-top: 42px;
-}
-
 #navbar {
     transition: all 0.3s ease;
     max-width: 1000px;
     text-align: center;
     padding: 0px;
+    top: 0;
     position: sticky;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
 }
 
 .nav__list {
@@ -343,7 +333,7 @@ nav {
     text-decoration: none;
     display: block;
     border-radius: 10px;
-    border: 5px solid white;
+    border: 5px solid transparent;
 }
 
 .dropdown-content a:hover {

@@ -97,8 +97,19 @@
             </div>
 
             <script>
+                function setActiveLink() {
+                    var navLinks = document.getElementsByClassName('nav-link');
+                    console.log(navLinks)
+                    for (var i = 0; i < navLinks.length; i++) {
+                        if (navLinks[i].href == document.URL) {
+                            navLinks[i].className += ' active';
+                            console.log(navLinks[i])
+                        }
+                    }
+                };
                 $.get("navbar.html", function (data) {
                     $("#nav-placeholder").replaceWith(data);
+                    setActiveLink();
                 });
             </script>
             <!--end of Navigation bar-->
@@ -235,7 +246,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 
-        <script src="script.js"></script>
     </body>
+    <script src="script.js"></script>
 
 </html>

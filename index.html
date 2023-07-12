@@ -28,14 +28,7 @@
 
         <!-- Conversion tracking -->
         <script>
-            function uet_report_conversion() {window.uetq = window.uetq || [];window.uetq.push('event', 'contact', {"event_label":"b88e56b4-a15d-4451-8aaf-ec960b09afc8"});}
-        </script>
-        <!-- End Conversion tracking -->
-
-
-        <!-- Conversion tracking -->
-        <script>
-            function uet_report_conversion() {window.uetq = window.uetq || [];window.uetq.push('event', 'contact', {"event_label":"b88e56b4-a15d-4451-8aaf-ec960b09afc8"});}
+            function uet_report_conversion() { window.uetq = window.uetq || []; window.uetq.push('event', 'contact', { "event_label": "b88e56b4-a15d-4451-8aaf-ec960b09afc8" }); }
         </script>
         <!-- End Conversion tracking -->
 
@@ -103,8 +96,19 @@
             </div>
 
             <script>
+                function setActiveLink() {
+                    var navLinks = document.getElementsByClassName('nav-link');
+                    console.log(navLinks)
+                    for (var i = 0; i < navLinks.length; i++) {
+                        if (navLinks[i].href == document.URL) {
+                            navLinks[i].className += ' active';
+                            console.log(navLinks[i])
+                        }
+                    }
+                };
                 $.get("navbar.html", function (data) {
                     $("#nav-placeholder").replaceWith(data);
+                    setActiveLink();
                 });
             </script>
             <!--end of Navigation bar-->
@@ -260,7 +264,8 @@
             </article>
             <article class="content">
 
-                <form action="https://formsubmit.co/info@fiksupalvelu.fi" method="POST" enctype="multipart/form-data" id="lomake">
+                <form action="https://formsubmit.co/info@fiksupalvelu.fi" method="POST" enctype="multipart/form-data"
+                    id="lomake">
                     <input type="hidden" name="_subject" value="Yhteydenotto-nettisivujenkautta">
                     <input type="hidden" name="_next" value="https://fiksukuljetus.com/kiitos">
                     <input type="hidden" name="_replyto" value="true">
@@ -445,7 +450,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 
-        <script src="script.js"></script>
     </body>
+    <script src="script.js"></script>
 
 </html>
