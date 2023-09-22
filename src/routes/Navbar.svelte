@@ -21,8 +21,7 @@
 				{ name: 'Muutto', href: '/muuttowiki' }
 			]
 		},
-		{ name: 'Yhteystiedot', href: '/yhteystiedot' },
-		{ name: 'Ota Yhteyttä!', href: '/yhteydenottolomake' }
+		{ name: 'Yhteystiedot', href: '/yhteystiedot' }
 	];
 
 	let showMenu = false;

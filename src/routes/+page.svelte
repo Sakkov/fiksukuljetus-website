@@ -2,10 +2,26 @@
 	// Import elements
 	import ContactForm from './ContactForm.svelte';
 	import CallToAction from './CallToAction.svelte';
+	import ImageCarousel from './ImageCarousel.svelte';
+
+	// Import images
+	import Background_80_w854 from '$lib/Images/background_80_w854.webp';
+	import Garvostelua from '$lib/Images/garvostelua.svg';
+	import Farvostelua from '$lib/Images/farvostelua.svg';
+	import Marvostelua from '$lib/Images/marvostelua.svg';
+	import Five_star from '$lib/Images/star-rating.svg';
 </script>
 
+<svelte:head>
+	<title>Fiksukuljetus Oy | Muutot Pirkanmaalla</title>
+	<meta
+		name="description"
+		content="Fiksukuljetus Oy on Pirkanmaan alueella toimiva muuttofirma. Meidän kauttamme saat edulliset ja tehokkaat muutot juuri sinun aikataulujesi mukaan."
+	/>
+</svelte:head>
+
 <article class="content">
-    <CallToAction />
+	<CallToAction />
 	<div class="grid">
 		<h3>
 			<strong> Me autamme sinua toteuttamaan unelmasi. </strong>
@@ -35,50 +51,17 @@
 			<strong> voit keskittyä vain nauttimaan uudesta kodistasi. </strong>
 			Tarvittaessa meiltä onnistuu myös pakkausapu.
 		</h3>
-		<div class="grid-img">
-			<div class="image-container carousel">
-				<img
-					class="carousel__image"
-					src="/Images/pesukone_kyytiin.webp"
-					height="534"
-					width="400"
-					alt="muutto tampere"
-				/>
-				<img
-					class="carousel__image"
-					src="/Images/paku_tayn_laatikoit.webp"
-					height="534"
-					width="400"
-					alt="tehokas muutto tampere"
-				/>
-				<img
-					class="carousel__image"
-					src="/Images/voimamies_sohva.webp"
-					height="534"
-					width="400"
-					alt="voimakkaimmat tekijät"
-				/>
-				<img
-					class="carousel__image"
-					src="/Images/tayspaku_80_w400.webp"
-					height="534"
-					width="400"
-					alt="muutto ylöjärvi tampere"
-				/>
-				<div class="carousel__prev" onclick="changeImage(-1)">&#10094;</div>
-				<div class="carousel__next" onclick="changeImage(1)">&#10095;</div>
-			</div>
-		</div>
+		<ImageCarousel />
 	</div>
 	<div id="review-scores">
 		<a href="https://goo.gl/maps/QBsBbFJ2cU4Mm3x37" target="_blank">
-			<img src="/Images/garvostelua.svg" alt="muutto tampere parhaat arvostelut" />
+			<img src={Garvostelua} alt="muutto tampere parhaat arvostelut" />
 		</a>
 		<a href="https://www.facebook.com/Fiksukuljetus/" target="_blank">
-			<img src="/Images/farvostelua.svg" alt="5 tähden muuttopalvelu tampere" />
+			<img src={Farvostelua} alt="5 tähden muuttopalvelu tampere" />
 		</a>
 		<a href="https://extra.muuttomaailma.fi/company/mMnhwKMn" target="_blank">
-			<img src="/Images/marvostelua.svg" alt="muutto tampere arvostelut" />
+			<img src={Marvostelua} alt="muutto tampere arvostelut" />
 		</a>
 	</div>
 	<div class="reviews">
@@ -90,7 +73,7 @@
 				oli saada heiltä myös muuttolaatikot.Kestävät ja sopivan kokoiset muoviset,helposti
 				pinottavatkin vielä.Iso suositus!!"
 			</p>
-			<img src="Images/star-rating.svg" alt="viiden tähden muutto" />
+			<img src={Five_star} alt="viiden tähden muutto" />
 			<p>- Muuttaja Tampere - Tampere, 6.6.2023</p>
 		</div>
 		<div class="review">
@@ -98,7 +81,7 @@
 				"Kaikki toimi niinkuin oltiin sovittu. Muutto sujui jouhevasti ja palvelu pelasi.
 				Suosittelen ehdottomasti ja aion käyttää jatkossakin jos tarvitsee vielä muuttaa."
 			</p>
-			<img src="Images/star-rating.svg" alt="viiden tähden muutto" />
+			<img src={Five_star} alt="viiden tähden muutto" />
 			<p>- Muuttaja Tampere - Lempäälä, 31.5.2023</p>
 		</div>
 		<div class="review">
@@ -108,7 +91,7 @@
 				hyvissä ajoin. Varsinainen muutto sujui ripeästi ja mallikkaasti. Lämmin suositus Fiksu
 				Kuljetukselle!"
 			</p>
-			<img src="Images/star-rating.svg" alt="viiden tähden muutto" />
+			<img src={Five_star} alt="viiden tähden muutto" />
 			<p>- Muuttaja Tampere - Tampere, 3.4.2023</p>
 		</div>
 		<div class="review">
@@ -117,7 +100,7 @@
 				muutamat naurutkin saatiin aikaan. Loistava palvelu asiakaspalvelussa ja muutto miehiltä
 				loistavaa palvelua. Voin suositella!"
 			</p>
-			<img src="Images/star-rating.svg" alt="viiden tähden muutto" />
+			<img src={Five_star} alt="viiden tähden muutto" />
 			<p>- Muuttaja Heinola - Kämmenniemi, 2.4.2023</p>
 		</div>
 	</div>
@@ -131,7 +114,7 @@
 	</div>
 	<div class="image-container-no-large">
 		<img
-			src="/Images/background_80_w854.webp"
+			src={Background_80_w854}
 			width="854"
 			height="641"
 			alt="Luotettava muuttofirma muuttoapu ylöjärvi"
@@ -182,6 +165,6 @@
 		Eli, jos stressitön muutto kuulostaa hyvältä, ole meihin yhteydessä!
 	</h2>
 	<h2 style="text-align: center;">
-		<a onclick="uet_report_conversion()" href="tel:+358 41 3191233">+358 41 3191233</a>
+		<a href="tel:+358 41 3191233">+358 41 3191233</a>
 	</h2>
 </section>
