@@ -13,7 +13,7 @@
         Tarjoamme monipuolisia palveluita muuttojen lisäksi. Erityisesti keskitymme <strong>painavien
             tavaroiden siirtoihin</strong> ja kertaluontaisiin <strong>suursiivouksiin</strong>. Meillä on
         kokemusta ja ammattitaitoa tarjota asiakkaillemme laadukkaita ja tehokkaita palveluita erilaisiin
-        tarpeisiin. <a href="/yhteydenottolomake">Ota yhteyttä ja kysy tarjousta</a>, niin suunnittelemme
+        tarpeisiin. <a href="/yhteystiedot">Ota yhteyttä ja kysy tarjousta</a>, niin suunnittelemme
         juuri Sinun tarpeisiisi sopivan palvelupaketin.
     </p>
 </article>
@@ -30,7 +30,7 @@
     </p>
     <div class="highlight">
         <div>
-            <a href="/yhteydenottolomake">Yhteydenottolomake</a>
+            <a href="/yhteystiedot">Yhteydenottolomake</a>
         </div>
     </div>
 </article>
@@ -47,7 +47,7 @@
     </p>
     <div class="highlight">
         <div>
-            <a href="/yhteydenottolomake">Yhteydenottolomake</a>
+            <a href="/yhteystiedot">Yhteydenottolomake</a>
         </div>
     </div>
 </article>
@@ -62,7 +62,7 @@
     </p>
     <div class="highlight">
         <div>
-            <a href="/yhteydenottolomake">Yhteydenottolomake</a>
+            <a href="/yhteystiedot">Yhteydenottolomake</a>
         </div>
     </div>
 </article>
@@ -78,7 +78,7 @@
     </p>
     <div class="highlight">
         <div>
-            <a href="/yhteydenottolomake">Yhteydenottolomake</a>
+            <a href="/yhteystiedot">Yhteydenottolomake</a>
         </div>
     </div>
 </article>
@@ -93,7 +93,7 @@
     </p>
     <div class="highlight">
         <div>
-            <a href="/yhteydenottolomake">Yhteydenottolomake</a>
+            <a href="/yhteystiedot">Yhteydenottolomake</a>
         </div>
     </div>
 </article>

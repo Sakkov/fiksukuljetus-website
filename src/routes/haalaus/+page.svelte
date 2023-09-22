@@ -29,7 +29,7 @@
 		painava ja iso esine. Tämä vaatii erityis kalustoa ja ammattitaitoa. Me tarjoamme luotettavaa ja
 		ammattitaitoista tavaran haalauspalvelua, joka varmistaa että tavarat siirretään turvallisesti
 		ja vahingoittamatta. <a href="/painavattavarat.html">Lue lisää</a> tai
-		<a href="/yhteydenottolomake.html">pyydä tarjous!</a>
+		<a href="/yhteystiedot.html">pyydä tarjous!</a>
 	</p>
 </article>
 
@@ -51,7 +51,7 @@
 	</p>
 	<div class="highlight">
 		<div>
-			<a href="/yhteydenottolomake">Yhteydenottolomake</a>
+			<a href="/yhteystiedot">Yhteydenottolomake</a>
 		</div>
 	</div>
 </article>
@@ -78,7 +78,7 @@
 	</p>
 	<div class="highlight">
 		<div>
-			<a href="/yhteydenottolomake">Yhteydenottolomake</a>
+			<a href="/yhteystiedot">Yhteydenottolomake</a>
 		</div>
 	</div>
 </article>

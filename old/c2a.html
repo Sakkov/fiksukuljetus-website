@@ -1,7 +1,7 @@
 
 <div class="highlight">
     <div>
-        <a href="/yhteydenottolomake">Ota Yhteyttä!</a>
+        <a href="/yhteystiedot">Ota Yhteyttä!</a>
     </div>
 </div>
 <br>

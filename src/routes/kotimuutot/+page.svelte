@@ -20,7 +20,7 @@
 		>
 		kuin myös <a href="#kotimuutto">kotimuuttoja</a>. Suunnittelemme ja toteutamme muuton juuri
 		asiakkaan tarpeiden mukaisesti.
-		<a href="/yhteydenottolomake">Ota yhteyttä ja kysy tarjousta</a>.
+		<a href="/yhteystiedot">Ota yhteyttä ja kysy tarjousta</a>.
 	</p>
 </article>
 
@@ -44,7 +44,7 @@
 	</p>
 	<div class="highlight">
 		<div>
-			<a href="/yhteydenottolomake">Yhteydenottolomake</a>
+			<a href="/yhteystiedot">Yhteydenottolomake</a>
 		</div>
 	</div>
 </article>

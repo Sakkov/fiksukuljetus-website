@@ -18,7 +18,7 @@
 			pianojen</a
 		>, <a href="#pianot">flyygelien</a> ja <a href="#maalämpöpumppu">maalämpöpumppujen</a>
 		siirrossa. Huolehdimme turvallisesti tavaroistasi alusta loppuun asti.
-		<a href="/yhteydenottolomake">Ota yhteyttä ja kysy tarjousta</a>, niin suunnittelemme juuri
+		<a href="/yhteystiedot">Ota yhteyttä ja kysy tarjousta</a>, niin suunnittelemme juuri
 		Sinun tarpeisiisi sopivan palvelupaketin.
 	</p>
 </article>
@@ -45,7 +45,7 @@
 	</p>
 	<div class="highlight">
 		<div>
-			<a href="/yhteydenottolomake">Yhteydenottolomake</a>
+			<a href="/yhteystiedot">Yhteydenottolomake</a>
 		</div>
 	</div>
 </article>
@@ -72,7 +72,7 @@
 	</p>
 	<div class="highlight">
 		<div>
-			<a href="/yhteydenottolomake">Yhteydenottolomake</a>
+			<a href="/yhteystiedot">Yhteydenottolomake</a>
 		</div>
 	</div>
 </article>
@@ -100,7 +100,7 @@
 	</p>
 	<div class="highlight">
 		<div>
-			<a href="/yhteydenottolomake">Yhteydenottolomake</a>
+			<a href="/yhteystiedot">Yhteydenottolomake</a>
 		</div>
 	</div>
 </article>

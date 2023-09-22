@@ -11,7 +11,7 @@
         <BareContact />
         <div class="highlight">
             <div>
-                <a href="/yhteydenottolomake">Yhteydenottolomake</a>
+                <a href="/yhteystiedot">Yhteydenottolomake</a>
             </div>
         </div>
     </div>

@@ -18,7 +18,7 @@
 		Fiksukuljetus Oy on erikoistunut <a href="#yritysmuutto">yritysmuuttoihin</a>, tarjoten
 		yrityksille sujuvia ja turvallisia muuttopalveluita. Jokainen yritysmuutto suunnitellaan ja
 		toteutetaan yksilöllisesti, ottaen huomioon yrityksesi ainutlaatuiset tarpeet ja aikataulut.
-		<a href="/yhteydenottolomake">Ota yhteyttä ja pyydä tarjous</a> – tehdään yhdessä yrityksesi muutosta
+		<a href="/yhteystiedot">Ota yhteyttä ja pyydä tarjous</a> – tehdään yhdessä yrityksesi muutosta
 		mahdollisimman vaivaton prosessi!
 	</p>
 </article>
@@ -46,7 +46,7 @@
 	</p>
 	<div class="highlight">
 		<div>
-			<a href="/yhteydenottolomake">Yhteydenottolomake</a>
+			<a href="/yhteystiedot">Yhteydenottolomake</a>
 		</div>
 	</div>
 </article>
@@ -72,7 +72,7 @@
 	</p>
 	<div class="highlight">
 		<div>
-			<a href="/yhteydenottolomake">Yhteydenottolomake</a>
+			<a href="/yhteystiedot">Yhteydenottolomake</a>
 		</div>
 	</div>
 </article>
