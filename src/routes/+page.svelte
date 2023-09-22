@@ -128,12 +128,6 @@
 		joten jos muuttosi toinen kohde sijaitsee Pirkanmaan alueella, pyydä rohkeasti tarjousta!
 	</p>
 	<h3 style="text-align: center ;">Muuton yhteydessä siivous edullisemmin!</h3>
-	<h3 class="tarjous">
-		<strong> Nyt kaikkien muuttojen yhteydessä muuttolaatikot ilmaiseksi kaupan päälle! </strong>
-		<div>
-			<small> normaalisti 1€/laatikko/viikko </small>
-		</div>
-	</h3>
 	<p>
 		<strong>Muuttolaatikoiden vuokraus</strong> edulliseen hintaan 1€/laatikko/viikko. Kestäviä ja käteviä
 		laatikoita helpottamaan pakkausta. Etenkin helposti hajoavien tavaroiden kuljettaminen on huomattavasti

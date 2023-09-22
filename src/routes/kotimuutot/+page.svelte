@@ -30,7 +30,7 @@
 		Tarjoamme laadukkaita ja turvallisia kotimuuttopalveluita koko Pirkanmaalla. Myös pitkän matkan
 		muutot, joissa toinen päätepiste sijaitsee Pirkanmaalla, onnistuvat meidän kanssa. Me laskemme
 		muutostasi kiinteän hinnan, jotta tiedät jo etukäteen mitä muuttosi tulee maksamaan. Hinta
-		sisältää aina muuttolaatikot sekä koko muuton. Ellei erikseen toisin sovita.
+		sisältää muuttolaatikot sekä koko muuton. Ellei erikseen toisin sovita.
 	</p>
 	<p>
 		Hinnoittelumme on selkeää ja palvelumme on laadukasta. Pidämme tavaroistanne sekä asunnoista
