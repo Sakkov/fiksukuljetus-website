@@ -29,7 +29,7 @@
     on:submit={handleSubmit}
 >
 	<input type="hidden" name="form-name" value="contact" />
-	<h2>Ota yhteyttä!</h2>
+	<!-- <h2>Ota yhteyttä!</h2>
 
 	<Contact />
 
@@ -192,7 +192,7 @@
 				placeholder="Mistä löysit meidät?"
 			/>
 		</div>
-	</div>
+	</div> -->
 	<div class="form-question">
 		<label for="muuta">Muuta huomioitavaa</label>
 		<div>
