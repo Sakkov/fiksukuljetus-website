@@ -24,11 +24,11 @@
     id="lomake"
 	class="content"
     bind:this={form}
-    name="yhteydenottolomake"
+    name="Yhteydenottolomake"
     data-netlify="true"
     on:submit={handleSubmit}
 >
-	<input type="hidden" name="form-name" value="Yhteydenotto-nettisivujenkautta" />
+	<input type="hidden" name="form-name" value="Yhteydenottolomake" />
 	<h2>Ota yhteyttä!</h2>
 
 	<Contact />
