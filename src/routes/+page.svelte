@@ -13,10 +13,11 @@
 </script>
 
 <svelte:head>
-	<title>Fiksukuljetus Oy | Muutot Pirkanmaalla</title>
+	<title>Muutto, Muutot, Muuttopalvelu Tampere & Pirkanmaa</title>
 	<meta
 		name="description"
-		content="Fiksukuljetus Oy on Pirkanmaan alueella toimiva muuttofirma. Meidän kauttamme saat edulliset ja tehokkaat muutot juuri sinun aikataulujesi mukaan."
+		content="Fiksukuljetus Oy - muuttopalvelu Tampere ja Pirkanmaa alueella. Edulliset ja tehokkaat muutot
+		juuri sinun aikataulujesi mukaan. Tilaa muutto kauttamme!"
 	/>
 </svelte:head>
 
